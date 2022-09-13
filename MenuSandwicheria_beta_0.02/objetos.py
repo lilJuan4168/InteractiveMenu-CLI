@@ -85,7 +85,15 @@ def list_of_obj(lista_de_diccionarios):
         x.append(nom)
     return x
 
+def cargar_data(diccionario,lista_de_diccionarios,file):
+    lista_de_diccionarios.append(diccionario)
+    with open(file,"w") as c:
+        json.dump(lista_de_diccionarios,c,indent=0)
+    msg = "Carga Completa"
+    return print(msg)
 
+
+    
 
 
 
