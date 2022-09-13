@@ -1,11 +1,14 @@
 from objetos import *
 from time import sleep
 from os import system
-from comidas import *
 
 titulo =  "bienvenidos a la sandwicheria"
+file = "comidas.json"
+file_data = leer_data(file)
+food = list_of_obj(file_data)
 loop = True
 menu = Menu(titulo,food)
+
 
 while loop:
     menu.despliegue()

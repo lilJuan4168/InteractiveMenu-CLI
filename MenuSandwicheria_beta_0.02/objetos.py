@@ -71,13 +71,20 @@ class Menu():
         mensaje = "el total a pagar es de $"+str(resultado)
         return print(mensaje.title())
     
-    def crear_poo(self):
-        n = input("Nombre: ")
-        p = int(input("Precio: "))
-        nombre = Comidas(n,p)
-        self.lista.append(nombre)
-    
-    
+def leer_data(file):
+    with open(file,"r") as c:
+        datos = json.load(c)
+        return datos
+
+def list_of_obj(lista_de_diccionarios):
+    x = []
+    for items in lista_de_diccionarios:
+        n = items["nombre"]
+        p = items["precio"]
+        nom = Comidas(n,p)
+        x.append(nom)
+    return x
+
 
 
 

@@ -1,0 +1,14 @@
+[
+    {
+        "nombre":"hamburguesa",
+        "precio":800
+    },
+    {
+        "nombre":"pizza",
+        "precio":500
+    },
+    {
+        "nombre":"empanadas",
+        "precio":50
+    }
+]
