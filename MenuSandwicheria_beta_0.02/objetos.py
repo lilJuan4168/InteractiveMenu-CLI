@@ -25,14 +25,14 @@ class Menu():
         print(self.subttitulo)
         for item in self.lista:
             i = self.lista.index(item) + 1
-            print(str(i)+"----"+item.nombre.title()+" $",item.precio,"\n")
+            print(str(i)+"----"+item.nombre.title()+" $"+str(item.precio),"\n")
             sleep(0.2)
     
     def carrito(self):
         print("Carrito---> ",end="")
         for item in self.lista:
-            print(item.nombre.title()+":",item.cantidad, end= " ")
-        print("")
+            print(item.nombre.title()+":"+str(item.cantidad), end= "  ")
+        print("\n")
 
     def user_input(self):
         opcion = input("Elige una Opcion o Presione una LETRA para Enviar: ")
