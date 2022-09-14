@@ -15,7 +15,7 @@ while loop:
     menu.carrito()
     u = menu.user_input()
    
-    if u == (True,True):
+    if u == ("a","a"):
        system("clear")
        nombre = input("Escribir nombre de nuevo elemento: ")
        precio = int(input("Escribir precio de nuevo elemento: "))

@@ -14,5 +14,9 @@
 {
 "nombre": "helado",
 "precio": 200
+},
+{
+"nombre": "pasta",
+"precio": 100
 }
 ]

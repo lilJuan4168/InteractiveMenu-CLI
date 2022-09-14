@@ -40,7 +40,7 @@ class Menu():
             g = int(opcion)
             for items in self.lista:   
                 if g == 1234:
-                    return (bool(True), bool(True))     
+                    return ("a"), ("a")     
                 elif g == int(self.lista.index(items)) + 1:
                     try: 
                        cantidad = int(input("Cuantas Unidades?: "))
