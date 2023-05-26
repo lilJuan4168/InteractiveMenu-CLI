@@ -3,7 +3,7 @@ from time import sleep
 from os import system
 
 titulo =  "bienvenidos a la sandwicheria"
-file = "comidas.json"
+file = "MenuSandwicheria_beta_0.02/comidas.json"
 file_data = leer_data(file)
 food = list_of_obj(file_data)  
 menu = Menu(titulo,food)

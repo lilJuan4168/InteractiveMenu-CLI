@@ -1,6 +1,6 @@
 from time import sleep
 from os import system
-from progress.bar import ChargingBar
+#from progress.bar import ChargingBar
 from objetos import *
 from funciones import *
 from comidas import *
